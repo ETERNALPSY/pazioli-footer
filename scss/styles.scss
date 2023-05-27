@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@mixin flex ($direction, $justify, $align, $wrap){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+}
+
+.footer {
+    @include flex (row,center,center,wrap );
+    background: linear-gradient(177.96deg, rgba(255, 255, 255, 0.43) 1.72%, #6F6F6F 107.44%);
+    padding: 5rem 1rem;
+    &__logo {
+        @include flex(row ,space-evenly ,space-between ,wrap );
+        margin-bottom: 3rem;
+        &-pazioli {
+            width: 133px;
+            margin:auto 50%;
+            margin-bottom: 4rem;
+        }
+        &-icon {
+            margin: auto;
+            width: 32px;
+        }   
+    }
+    &__div {
+        @include flex(row ,center ,center ,wrap );
+        text-align: center;
+    }
+    &__nav {
+        font-size: 14px;
+        color: #000000;
+        margin-bottom: 1rem;
+        &-subtitle{
+            font-family: 'Abril Fatface';
+            font-weight: bolder;
+        }
+        &-list li{
+            list-style-type:none;
+            font-family: 'Poppins';
+            margin: 1rem 0;
+            font-size: 12px;
+            a {
+                color: #000000; 
+                text-decoration: none;
+            }
+        }
+    }
+    &__address {
+        font-family: 'Abril Fatface';
+        font-size: 14px;
+        color: #000000;
+        margin-bottom: 3rem;
+        &-subtitle {            
+            font-weight: bolder;
+        }        
+        &-add {
+            margin: 1rem 0;
+            font-family: 'Poppins';
+            font-size: 12px;
+        }
+        &-derechos {
+            min-width: 100%;
+            margin-bottom: 2rem;
+            font-family: 'Raleway';
+            font-size: 14px;
+            color: #000000;
+        }
+    }
+    &__tool {
+        min-width: 100%;
+        text-align: center;
+        font-family: 'Raleway';
+        font-size: 14px;
+        color: #000000;
+    }
+}
+@media screen and (min-width: 768px) {
+    .footer {
+        justify-content: space-between;
+        padding: 5rem 5rem;
+        &__div {
+            text-align: left;
+            justify-content: space-between;
+        }
+    }
+}    

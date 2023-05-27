@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: linear-gradient(177.96deg, rgba(255, 255, 255, 0.43) 1.72%, #6F6F6F 107.44%);
+  padding: 5rem 1rem;
+}
+.footer__logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+.footer__logo-pazioli {
+  width: 133px;
+  margin: auto 50%;
+  margin-bottom: 4rem;
+}
+.footer__logo-icon {
+  margin: auto;
+  width: 32px;
+}
+.footer__div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.footer__nav {
+  font-size: 14px;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+.footer__nav-subtitle {
+  font-family: "Abril Fatface";
+  font-weight: bolder;
+}
+.footer__nav-list li {
+  list-style-type: none;
+  font-family: "Poppins";
+  margin: 1rem 0;
+  font-size: 12px;
+}
+.footer__nav-list li a {
+  color: #000000;
+  text-decoration: none;
+}
+.footer__address {
+  font-family: "Abril Fatface";
+  font-size: 14px;
+  color: #000000;
+  margin-bottom: 3rem;
+}
+.footer__address-subtitle {
+  font-weight: bolder;
+}
+.footer__address-add {
+  margin: 1rem 0;
+  font-family: "Poppins";
+  font-size: 12px;
+}
+.footer__address-derechos {
+  min-width: 100%;
+  margin-bottom: 2rem;
+  font-family: "Raleway";
+  font-size: 14px;
+  color: #000000;
+}
+.footer__tool {
+  min-width: 100%;
+  text-align: center;
+  font-family: "Raleway";
+  font-size: 14px;
+  color: #000000;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    justify-content: space-between;
+    padding: 5rem 5rem;
+  }
+  .footer__div {
+    text-align: left;
+    justify-content: space-between;
+  }
+}/*# sourceMappingURL=styles.css.map */
